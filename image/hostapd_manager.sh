@@ -18,7 +18,7 @@ HOSTAPD=('/etc/hostapd/hostapd.user')
 HOSTAPD_SECURE_VALUES_DELETE=('auth_algs=1' 'wpa=3' 'wpa_passphrase=' 'wpa_key_mgmt=WPA-PSK' 'wpa_pairwise=TKIP' 'rsn_pairwise=CCMP')
 
 # 'wpa_passphrase=' was left out of this to set it with the $wifiPass. I assume you can not evaluate a variable from within an array variable
-HOSTAPD_SECURE_VALUES_WRITE=('auth_algs=1' 'wpa=3' 'wpa_key_mgmt=WPA-PSK' 'wpa_pairwise=TKIP' 'rsn_pairwise=CCMP')
+HOSTAPD_SECURE_VALUES_WRITE=('auth_algs=1' 'wpa=3' 'wpa_key_mgmt=WPA-PSK' 'wpa_pairwise=CCMP' 'rsn_pairwise=CCMP')
 
 #Initialize variables to default values.
 OPT_S=false
